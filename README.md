@@ -27,7 +27,7 @@ Welcome to the **NFTKART**, a vibrant platform where creators and collectors uni
 ![List NFT](https://github.com/user-attachments/assets/4aa145e5-86f8-4e69-9dd7-be5d899a0b51)
 ![Buy NFT](https://github.com/user-attachments/assets/e22e6027-6677-41d3-a5f0-43be1999fd72)
 
-###Video
+### 📷 Video
 https://drive.google.com/file/d/1RlEJ0tXt42qJyhaxk6nVQmJkEtLi9ZwS/view?usp=sharing
 
 
