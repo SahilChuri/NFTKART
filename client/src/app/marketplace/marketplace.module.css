@@ -1,0 +1,98 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(90deg, #00cffd 0%, #b57edc 100%);
+}
+
+.innerContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px; /* Added padding */
+}
+
+.content {
+  max-width: 1500px;
+  margin: 0 auto 90px auto;
+  max-height: 700px;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  padding: 0 10px;
+}
+
+.heading {
+  font-size: 42px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+
+.nftSection {
+  margin-top: 20px;
+}
+.nftGrid {
+  display: flex; /* Use flex for horizontal layout */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  padding: 10px 0; /* Added padding for aesthetic */
+  gap: 20px; /* Added gap between cards */
+}
+
+.nftCard {
+  flex: 0 0 auto; /* Prevent the card from shrinking */
+  width: 200px; /* Fixed width for consistency */
+  margin-right: 20px; /* Margin for spacing between cards */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative; /* Position relative for hover effects */
+  transition: transform 0.3s; /* Smooth scale effect on hover */
+}
+
+.nftCard:last-child {
+  margin-right: 0; /* Remove margin from the last card */
+}
+
+.nftCard:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.cardImage {
+  width: 100%; /* Full width for image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.cardDetails {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for details */
+  color: #fff;
+  padding: 10px;
+  text-align: center; /* Center text */
+}
+
+.cardTitle {
+  font-size: 18px; /* Title size */
+  font-weight: bold;
+}
+
+.cardPrice {
+  font-size: 16px; /* Price size */
+  color: #ccc;
+}
+
+.noNFT {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ccc;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.notConnected {
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin: 16px 0;
+}

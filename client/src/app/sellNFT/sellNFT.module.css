@@ -1,0 +1,174 @@
+/* General Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #eef2f7; /* Soft, modern background */
+  color: #2c3e50; /* Dark color for text */
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.content {
+  background-color: #ffffff; /* Bright white for clean contrast */
+  padding: 40px;
+  border-radius: 16px; /* Softer rounded corners for a modern look */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 800px; /* Max width for centering the form */
+  transition: transform 0.3s ease;
+}
+
+.content:hover {
+  transform: translateY(-8px); /* Slight hover effect for the form card */
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
+}
+
+/* Form Wrapper */
+.formWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  justify-content: space-between; /* Space between items */
+  gap: 20px; /* Gap between items */
+}
+
+/* Form Styling */
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between fields */
+  flex: 1; /* Allow this to grow */
+}
+
+.FormContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow each field to grow */
+}
+
+.Label {
+  font-size: 15px;
+  color: #7f8c8d;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.Input {
+  padding: 12px 16px;
+  border-radius: 12px; /* Rounded input fields */
+  border: 1px solid #ccc; /* Light border */
+  font-size: 16px;
+  color: #34495e;
+  background-color: #f9fafb; /* Light background for inputs */
+  transition: all 0.3s ease;
+}
+
+.Input:focus {
+  border-color: #3498db; /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.2); /* Soft shadow on focus */
+}
+
+.TextArea {
+  height: 130px;
+  resize: none; /* No resizing allowed */
+}
+
+/* File Upload */
+.ImagePreview {
+  margin-top: 16px;
+  text-align: center;
+  flex: 1; /* Allow the preview to grow */
+}
+
+.ImagePreview img {
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #e1e1e1;
+}
+
+/* Message Styling */
+.msg {
+  text-align: center;
+  font-size: 15px;
+  color: #e74c3c;
+  margin-top: 12px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3498db; /* Primary blue */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:disabled {
+  background-color: #bdc3c7; /* Disabled gray */
+  cursor: not-allowed;
+}
+
+.activebtn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.inactivebtn {
+  background-color: #95a5a6;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid #2980b9; /* Spinning effect */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Not Connected Section */
+.notConnected {
+  font-size: 22px;
+  font-weight: 500;
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 40px;
+  padding: 16px;
+  background-color: rgba(231, 76, 60, 0.1); /* Light red background */
+  border-radius: 12px;
+}
